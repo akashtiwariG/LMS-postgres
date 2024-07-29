@@ -21,4 +21,4 @@ function adminMiddleware(req:Request, res:Response, next:NextFunction) {
     }
 }
 
-module.exports = adminMiddleware;
+export default adminMiddleware;

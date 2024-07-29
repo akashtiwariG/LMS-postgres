@@ -1,10 +1,10 @@
-const { Router } = require("express");
-const adminMiddleware = require("../middleware/admin");
-const router = Router();
-const jwt = require("jsonwebtoken");
-import { PrismaClient } from '@prisma/client'
-const prisma = new PrismaClient();
-import { Request,Response} from "express";
+import express, { Request,Response} from "express";
+import adminMiddleware from "../middleware/admin"
+const router = express.Router();
+import jwt from "jsonwebtoken"
+import prisma from "../db/index"
+
+
 const JWT_SECRET = require("../config");
 
 
@@ -34,13 +34,14 @@ router.post('/signin',async(req:Request,res:Response)=>{
 });
 router.post('/issue', adminMiddleware, async(req:Request, res:Response) => {
     // Implement course creation logic
-    const {department,issue,labno,status} = req.body;
+    const {department,issue,labno,status,description} = req.body;
     const newIssue = await prisma.issues.create({
         data:{
             department,
             issue,
             labno,
-            status
+            status,
+            description
         }
     })
     
@@ -57,4 +58,4 @@ router.get('/showIssue', async(req:Request,res:Response) => {
         issue: response
     })
 })
-module.exports = router;
+export default router;

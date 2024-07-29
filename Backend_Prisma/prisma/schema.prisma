@@ -17,14 +17,14 @@ model administrators {
   id         Int      @id @default(autoincrement())
   email   String   @unique
   password   String
-  phonenumber Int
+  phonenumber Float
   status   String
 }
 model admins {
   id         Int      @id @default(autoincrement())
   email   String   @unique
   password   String
-  phonenumber Int
+  phonenumber Float
   status   String
 }
 
@@ -34,4 +34,5 @@ model issues {
   issue String
   labno Int
   status String
+  description String
 }
