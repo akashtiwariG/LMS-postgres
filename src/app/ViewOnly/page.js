@@ -84,7 +84,7 @@ export default function page() {
     {/*  department 2  */}
     <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
         <a href="/ViewOnly/ee">
-            <Image src="/public/Assets/icon.jpg"
+            <Image src="/Assets/ee-logo.jpg"
                     alt="Product" class="h-80 w-72 object-cover rounded-t-xl" width = {50} height = {50} />
             <div class="px-4 py-3 w-72">
                 
@@ -92,13 +92,7 @@ export default function page() {
                 <div class="flex items-center">
                     <p class="text-lg font-semibold text-black cursor-auto my-3">3 labs</p>
                     
-                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                            <path
-                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                        </svg></div>
+                   
                 </div>
             </div>
         </a>
@@ -109,7 +103,7 @@ export default function page() {
    {/* 3 starts */}
    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
         <a href="#">
-            <img src="../"
+            <img src="/Assets/cr.png"
                     alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
             <div class="px-4 py-3 w-72">
                 
@@ -117,13 +111,7 @@ export default function page() {
                 <div class="flex items-center">
                     <p class="text-lg font-semibold text-black cursor-auto my-3">3 labs</p>
                     
-                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                            <path
-                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                        </svg></div>
+              
                 </div>
             </div>
         </a>
@@ -131,78 +119,7 @@ export default function page() {
     {/* 3 ends */}
 
 
-    {/* 4 starts */}
-
-    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-        <a href="#">
-            <img src="../"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
-            <div class="px-4 py-3 w-72">
-                
-                <p class="text-lg font-bold text-black truncate block capitalize">Computer Science and Engineering</p>
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold text-black cursor-auto my-3">3 labs</p>
-                    
-                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                            <path
-                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                        </svg></div>
-                </div>
-            </div>
-        </a>
-    </div>
-    {/* 4ends */}
-    {/* 5 starts */}
-    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-        <a href="#">
-            <img src="../"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
-            <div class="px-4 py-3 w-72">
-                
-                <p class="text-lg font-bold text-black truncate block capitalize">Computer Science and Engineering</p>
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold text-black cursor-auto my-3">3 labs</p>
-                    
-                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                            <path
-                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                        </svg></div>
-                </div>
-            </div>
-        </a>
-    </div>
-    {/* 5 ends*/}
-
-    {/* 6 starts*/}
-    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-        <a href="#">
-            <img src="../"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
-            <div class="px-4 py-3 w-72">
-                
-                <p class="text-lg font-bold text-black truncate block capitalize">Computer Science and Engineering</p>
-                <div class="flex items-center">
-                    <p class="text-lg font-semibold text-black cursor-auto my-3">3 labs</p>
-                    
-                    <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
-                            <path
-                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                        </svg></div>
-                </div>
-            </div>
-        </a>
-    </div>
-    {/*  6 ends */}
-    
+   
 
 </section>
 </div>
@@ -245,10 +162,10 @@ export default function page() {
 
         <div class="flex flex-col rounded-lg bg-blue-50 px-4 py-8 text-center dark:bg-blue-700/25">
           <dt class="order-last text-lg font-medium text-gray-500 dark:text-white/75">
-            Total Addons
+            Pending Issues
           </dt>
 
-          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl dark:text-blue-50">86</dd>
+          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl dark:text-blue-50">16</dd>
         </div>
       </dl>
     </div>
