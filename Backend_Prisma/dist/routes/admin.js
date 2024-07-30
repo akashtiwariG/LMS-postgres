@@ -65,4 +65,16 @@ router.get('/showIssue', (req, res) => __awaiter(void 0, void 0, void 0, functio
         issue: response
     });
 }));
+router.delete('/deleteIssue', admin_1.default, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const id = Number(req.query.labno);
+    console.log(req.query);
+    const response = yield index_1.default.issues.deleteMany({
+        where: {
+            labno: id
+        }
+    });
+    res.json({
+        issue: response
+    });
+}));
 exports.default = router;

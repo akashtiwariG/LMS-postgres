@@ -58,4 +58,20 @@ router.get('/showIssue', async(req:Request,res:Response) => {
         issue: response
     })
 })
+router.delete('/deleteIssue', adminMiddleware, async (req:Request, res:Response) => {
+    
+
+    const id = Number (req.query.labno);
+    console.log(req.query)
+    const response = await prisma.issues.deleteMany({
+        where:{
+            labno:id
+        }
+
+    })
+    res.json({
+        issue: response
+    })
+
+})
 export default router;

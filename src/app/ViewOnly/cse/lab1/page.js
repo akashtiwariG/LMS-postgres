@@ -116,7 +116,11 @@ console.log(data)
         />
       </svg>
 
-      <span class="text-[10px] font-medium sm:text-xs">Solved!</span>
+      <span class="text-[10px] font-medium sm:text-xs">
+        <button onClick={async() =>{
+          await axios.delete(`http://localhost:4000/admin/deleteIssue?id=${issue.id}`)
+        }} >Solved</button>
+      </span>
     </strong>
   </div>
 
