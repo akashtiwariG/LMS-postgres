@@ -141,7 +141,7 @@ console.log(data)
     </div>
     <div className="mt-12 text-center">
       <a
-        href="/ViewOnly/cse/lab1/issues"
+        href="/ViewOnly/cse/lab1/createissue"
         className="inline-block rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
       >
       <div><i class="fa-solid fa-plus"></i></div>
@@ -165,12 +165,13 @@ console.log(data)
     <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
       <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-          <img
+        <Image
             alt=""
-            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+            src="/Assets/assistant2.jpg"
             className="size-14 rounded-full object-cover"
+            width={20}
+            height={20}
           />
-
           <div>
            
 
@@ -190,10 +191,12 @@ console.log(data)
 
       <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-          <img
+          <Image
             alt=""
-            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+            src="/Assets/assistant1.jpg"
             className="size-14 rounded-full object-cover"
+            width={20}
+            height={20}
           />
 
           <div>
@@ -212,10 +215,12 @@ console.log(data)
 
       <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-          <img
+        <Image
             alt=""
-            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+            src="/Assets/assistant3.jpg"
             className="size-14 rounded-full object-cover"
+            width={20}
+            height={20}
           />
 
           <div>

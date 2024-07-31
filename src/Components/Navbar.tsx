@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
         },
         {
             id: 4,
-            title: "View Only",
+            title: "NIT Rourkela",
             path: "/ViewOnly",
             cName: "nav-text",
 

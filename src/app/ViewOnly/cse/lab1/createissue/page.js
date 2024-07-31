@@ -1,46 +1,30 @@
-import React from 'react'
-import Navbar from '@/Components/Navbar'
-import Footer from '@/Components/Footer'
-import Image from 'next/image'
+import React from 'react';
+import Navbar from '@/Components/Navbar';
 
 
-
-
-export default function page() {
+const FormComponent = () => {
   return (
     <div>
+    <Navbar />
  
-
-<div>
-  <label for="OrderNotes" class="sr-only">Order notes</label>
-
-  <div
-    class="overflow-hidden rounded-lg border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 dark:border-gray-700"
-  >
-    <textarea
-      id="OrderNotes"
-      class="w-full resize-none border-none align-top focus:ring-0 sm:text-sm dark:bg-gray-800 dark:text-white"
-      rows="4"
-      placeholder="Enter any additional order notes..."
-    ></textarea>
-
-    <div class="flex items-center justify-end gap-2 bg-white p-3 dark:bg-gray-800">
-      <button
-        type="button"
-        class="rounded bg-gray-200 px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:text-gray-100"
-      >
-        Clear
-      </button>
-
-      <button
-        type="button"
-        class="rounded bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-700"
-      >
-        Add
-      </button>
+ 
+    <div className="flex items-center justify-center min-h-screen bg-gray-900">
+      <form className="bg-white p-6 rounded-lg shadow-md w-full max-w-sm">
+        <div className="mb-4">
+          <label htmlFor="firstName" className="block text-gray-700 font-bold mb-2">Issue</label>
+          <input type="text" id="firstName" name="firstName" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Issue" />
+        </div>
+        <div className="mb-4">
+          <label htmlFor="lastName" className="block text-gray-700 font-bold mb-2">Description</label>
+          <input type="text" id="lastName" name="lastName" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Description about the issue" />
+        </div>
+        <div className="flex items-center justify-between">
+          <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
+        </div>
+      </form>
     </div>
-  </div>
-</div>
     </div>
-  )
+  );
 }
+
+export default FormComponent;

@@ -11,7 +11,7 @@ export default function page() {
    {/* hero section starts */}
  
 <section
-  class="overflow-hidden bg-[url(https://website.nitrkl.ac.in/images/events/CS.png)] bg-cover bg-top bg-no-repeat"
+  class="overflow-hidden bg-[url(https://website.nitrkl.ac.in/images/events/EE.png)] bg-cover bg-top bg-no-repeat"
 >
   <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
     <div class="text-center ltr:sm:text-left rtl:sm:text-right">
