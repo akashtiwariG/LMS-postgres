@@ -17,7 +17,6 @@ const index_1 = __importDefault(require("./index"));
 const router = express_1.default.Router();
 router.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const response = yield index_1.default.issues.findMany({});
-    console.log(response);
 }));
 router.get('/labIssue', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const department = String(req.query.department);
@@ -28,7 +27,6 @@ router.get('/labIssue', (req, res) => __awaiter(void 0, void 0, void 0, function
             labno: labno
         }
     });
-    console.log(response);
     res.json(response);
 }));
 exports.default = router;

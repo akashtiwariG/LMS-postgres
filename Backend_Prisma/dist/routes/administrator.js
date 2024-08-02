@@ -23,6 +23,7 @@ router.post('/signin', (req, res) => __awaiter(void 0, void 0, void 0, function*
     const email = req.body.email;
     const password = req.body.password;
     const phonenumber = req.body.phonenumber;
+    console.log(req.body);
     const user = yield index_1.default.administrators.findFirst({
         where: {
             email: email

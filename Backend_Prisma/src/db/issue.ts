@@ -5,7 +5,7 @@ const router = express.Router();
 router.get('/', async(req:Request,res:Response) => {
 
     const response = await prisma.issues.findMany({});
-    console.log(response);
+    
     
 })
 
@@ -19,7 +19,7 @@ router.get('/labIssue', async(req:Request,res:Response) => {
             labno:labno
         }
     })
-    console.log(response)
+    
     res.json(response)
 
 })

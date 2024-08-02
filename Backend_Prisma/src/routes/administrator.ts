@@ -12,6 +12,7 @@ router.post('/signin', async (req:Request, res:Response) => {
     const email = req.body.email;
     const password = req.body.password;
     const phonenumber = req.body.phonenumber;
+    console.log(req.body)
     const user = await prisma.administrators.findFirst({
         where:{
             email:email

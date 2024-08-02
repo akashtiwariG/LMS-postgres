@@ -3,6 +3,7 @@ import adminMiddleware from "../middleware/admin"
 const router = express.Router();
 import jwt from "jsonwebtoken"
 import prisma from "../db/index"
+import { error } from "console";
 
 
 const JWT_SECRET = require("../config");
@@ -34,21 +35,34 @@ router.post('/signin',async(req:Request,res:Response)=>{
 });
 router.post('/issue', adminMiddleware, async(req:Request, res:Response) => {
     // Implement course creation logic
-    const {department,issue,labno,status,description} = req.body;
-    const newIssue = await prisma.issues.create({
-        data:{
-            department,
-            issue,
-            labno,
-            status,
-            description
+
+        console.log(req.body)
+        const department = req.body.department;
+        const issue = req.body.issue;
+        const labno = req.body.labno;
+        const status = req.body.status;
+        const description =req.body.description;
+        const newIssue = await prisma.issues.create({
+          data:{
+              department,
+              issue,
+              labno,
+              status,
+              description
+          }
+        })
+        if(newIssue){
+            res.json({
+                newIssue
+            })
         }
-    })
+        else{
+            res.status(411).json({
+                message:"Incorrect request"
+            })
+        }
     
-    console.log(issue);
-    res.json({
-        message:'Issue created successfully',issueId: newIssue.id
-    })
+    
 });
 router.get('/showIssue', async(req:Request,res:Response) => {
 
@@ -61,11 +75,15 @@ router.get('/showIssue', async(req:Request,res:Response) => {
 router.delete('/deleteIssue', adminMiddleware, async (req:Request, res:Response) => {
     
 
-    const id = Number (req.query.labno);
+    const id = Number (req.query.id);
+    const department = String (req.query.department);
+    const labno = Number (req.query.labno)
     console.log(req.query)
     const response = await prisma.issues.deleteMany({
         where:{
-            labno:id
+            id:id,
+            department:department,
+            labno:labno
         }
 
     })

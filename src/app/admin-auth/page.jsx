@@ -14,6 +14,7 @@ const AdministratorLogin = () => {
     const [password, setPassword] = useState('')
     const [phonenumber, setPhonenumber] = useState('')
     const [isloading, setIsloading] = useState(false)
+    const [token,setToken] = useState(null)
 
     const Userlogin = async (e) => {
         e.preventDefault();
@@ -29,14 +30,17 @@ const AdministratorLogin = () => {
             body: JSON.stringify({ email, password, phonenumber })
         })
         const userdata = await response.json()
+        console.log(userdata)
         if (!response.ok) {
             setIsloading(false)
             alert("Either the Email or password in incorrect or YOU ARE NOT AN ADMIN ❌")
         }
         if (response.ok) {
             localStorage.setItem('user', JSON.stringify(userdata))
+            setToken(localStorage.getItem('user'))
+
             setIsloading(false)
-            window.location.href = "/home";
+            window.location.href = "/ViewOnly";
         }
         // const customer_id = userdata.Customer._id
         // const merchant = await fetch('http://localhost:4000/order/near', {
@@ -85,4 +89,5 @@ const AdministratorLogin = () => {
     )
 }
 
-export default AdministratorLogin;
+
+export default  AdministratorLogin;

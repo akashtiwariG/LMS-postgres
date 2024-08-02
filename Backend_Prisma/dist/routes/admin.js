@@ -43,7 +43,12 @@ router.post('/signin', (req, res) => __awaiter(void 0, void 0, void 0, function*
 }));
 router.post('/issue', admin_1.default, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     // Implement course creation logic
-    const { department, issue, labno, status, description } = req.body;
+    console.log(req.body);
+    const department = req.body.department;
+    const issue = req.body.issue;
+    const labno = req.body.labno;
+    const status = req.body.status;
+    const description = req.body.description;
     const newIssue = yield index_1.default.issues.create({
         data: {
             department,
@@ -53,10 +58,16 @@ router.post('/issue', admin_1.default, (req, res) => __awaiter(void 0, void 0, v
             description
         }
     });
-    console.log(issue);
-    res.json({
-        message: 'Issue created successfully', issueId: newIssue.id
-    });
+    if (newIssue) {
+        res.json({
+            newIssue
+        });
+    }
+    else {
+        res.status(411).json({
+            message: "Incorrect request"
+        });
+    }
 }));
 router.get('/showIssue', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const response = yield index_1.default.issues.findMany({});
@@ -66,11 +77,15 @@ router.get('/showIssue', (req, res) => __awaiter(void 0, void 0, void 0, functio
     });
 }));
 router.delete('/deleteIssue', admin_1.default, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const id = Number(req.query.labno);
+    const id = Number(req.query.id);
+    const department = String(req.query.department);
+    const labno = Number(req.query.labno);
     console.log(req.query);
     const response = yield index_1.default.issues.deleteMany({
         where: {
-            labno: id
+            id: id,
+            department: department,
+            labno: labno
         }
     });
     res.json({
