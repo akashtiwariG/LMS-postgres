@@ -3,7 +3,11 @@ import cors from "cors"
 import bodyParser from "body-parser"
 import prisma from "./db";
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin:[],
+    methods:["POST","GET","DELETE"],
+    credentials:true
+}));
 import adminRouter from "./routes/admin"
 import administratorRouter from "./routes/administrator"
 import issueRouter from "./db/issue"
