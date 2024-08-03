@@ -22,8 +22,7 @@ export default function page() {
       <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">DBMS Lab</h2>
 
       <p className="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore officia corporis quasi
-        doloribus iure architecto quae voluptatum beatae excepturi dolores.
+      A database management system (DBMS) is a software system for creating and managing databases. A DBMS enables end users to create, protect, read, update and delete data in a database. It also manages security, data integrity and concurrency for databases.
       </p>
 
       <div className="mt-4 sm:mt-8">
@@ -257,12 +256,13 @@ export default function page() {
     <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
       <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-          <img
+        <Image
             alt=""
-            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+            src="/Assets/assistant2.jpg"
             className="size-14 rounded-full object-cover"
+            width={20}
+            height={20}
           />
-
           <div>
            
 
@@ -282,10 +282,12 @@ export default function page() {
 
       <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-          <img
+          <Image
             alt=""
-            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+            src="/Assets/assistant1.jpg"
             className="size-14 rounded-full object-cover"
+            width={20}
+            height={20}
           />
 
           <div>
@@ -304,10 +306,12 @@ export default function page() {
 
       <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-          <img
+        <Image
             alt=""
-            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+            src="/Assets/assistant3.jpg"
             className="size-14 rounded-full object-cover"
+            width={20}
+            height={20}
           />
 
           <div>

@@ -102,7 +102,7 @@ export default function page() {
 
    {/* 3 starts */}
    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-        <a href="#">
+        <a href="/ViewOnly/cr">
             <img src="/Assets/cr.png"
                     alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
             <div class="px-4 py-3 w-72">
