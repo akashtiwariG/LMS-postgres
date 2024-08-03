@@ -1,10 +1,24 @@
+"use client"
 import React from 'react'
 import Navbar from '@/Components/Navbar'
 import Image from 'next/image'
 import Footer from '@/Components/Footer'
+import axios from 'axios'
+import { useState,useEffect } from 'react'
 
-
+const myFunction = async () => {
+  // run asynchronous tasks here
+  const res = await axios.get('http://localhost:4000/issue/depnumIssue?department=cse')
+  console.log(res.data)
+  return res.data;
+}
 export default function page() {
+
+  const [numIssues,setNum] = useState(0);
+  useEffect(() =>{
+    const val = myFunction().then((data) => setNum(data))
+    
+},[])
   return (
     <div>
    <Navbar/>
@@ -68,7 +82,7 @@ export default function page() {
           />
         </svg>
 
-        <h1 className="mt-4 text-4xl font-bold text-white">3</h1>
+        <h1 className="mt-4 text-4xl font-bold text-white">{numIssues}</h1>
 
         <p className="mt-1 text-sm text-gray-300">
         Pending Issues

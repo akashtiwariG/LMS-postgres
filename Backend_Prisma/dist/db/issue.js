@@ -18,6 +18,19 @@ const router = express_1.default.Router();
 router.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const response = yield index_1.default.issues.findMany({});
 }));
+router.get('/numIssue', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const response = yield index_1.default.issues.count();
+    res.json(response);
+}));
+router.get('/depnumIssue', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const department = String(req.query.department);
+    const response = yield index_1.default.issues.count({
+        where: {
+            department: department
+        }
+    });
+    res.json(response);
+}));
 router.get('/labIssue', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const department = String(req.query.department);
     const labno = Number(req.query.labno);

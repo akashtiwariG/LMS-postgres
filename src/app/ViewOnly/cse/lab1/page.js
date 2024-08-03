@@ -48,7 +48,8 @@ export default function page() {
       <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">DSA Lab</h2>
 
       <p className="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
-      Data Structures and Algorithms (DSA) is a fundamental part of Computer Science that teaches you how to think and solve complex problems systematically.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore officia corporis quasi
+        doloribus iure architecto quae voluptatum beatae excepturi dolores.
       </p>
 
       <div className="mt-4 sm:mt-8">
@@ -77,7 +78,6 @@ export default function page() {
 
     
     <div className="mt-8 grid grid-flow-cols md:grid-flow-row">
-    
 
       {data.map((issue,i) =>{
          return <div
@@ -183,13 +183,12 @@ export default function page() {
     <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
       <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-        <Image
+          <img
             alt=""
-            src="/Assets/assistant2.jpg"
+            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
             className="size-14 rounded-full object-cover"
-            width={20}
-            height={20}
           />
+
           <div>
            
 
@@ -209,12 +208,10 @@ export default function page() {
 
       <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-          <Image
+          <img
             alt=""
-            src="/Assets/assistant1.jpg"
+            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
             className="size-14 rounded-full object-cover"
-            width={20}
-            height={20}
           />
 
           <div>
@@ -233,12 +230,10 @@ export default function page() {
 
       <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
-        <Image
+          <img
             alt=""
-            src="/Assets/assistant3.jpg"
+            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
             className="size-14 rounded-full object-cover"
-            width={20}
-            height={20}
           />
 
           <div>

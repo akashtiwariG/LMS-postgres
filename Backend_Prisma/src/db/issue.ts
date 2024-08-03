@@ -8,7 +8,26 @@ router.get('/', async(req:Request,res:Response) => {
     
     
 })
+router.get('/numIssue', async(req:Request,res:Response) => {
 
+    
+    const response = await prisma.issues.count()
+    
+    res.json(response)
+
+})
+router.get('/depnumIssue', async(req:Request,res:Response) => {
+    
+    const department = String (req.query.department);
+    const response = await prisma.issues.count({
+        where:{
+            department:department
+        }
+    })
+    
+    res.json(response)
+
+})
 router.get('/labIssue', async(req:Request,res:Response) => {
 
     const department = String (req.query.department);

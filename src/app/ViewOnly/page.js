@@ -1,11 +1,27 @@
+"use client"
 import React from 'react'
 import Navbar from '../../Components/Navbar'
 import Image from 'next/image'
-
+import { useState,useEffect } from 'react'
+import axios from 'axios'
+const myFunction = async () => {
+  // run asynchronous tasks here
+  const res = await axios.get('http://localhost:4000/issue/numIssue/')
+  console.log(res.data)
+  return res.data;
+}
 
 
 export default function page() {
+
+  const [numIssues,setNum] = useState(0);
+  useEffect(() =>{
+    const val = myFunction().then((data) => setNum(data))
+    
+},[])
+  
   return (
+
     <div>
    <Navbar/>
    {/* hero section starts */}
@@ -165,7 +181,7 @@ export default function page() {
             Pending Issues
           </dt>
 
-          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl dark:text-blue-50">16</dd>
+          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl dark:text-blue-50">{numIssues}</dd>
         </div>
       </dl>
     </div>
