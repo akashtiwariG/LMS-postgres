@@ -12,7 +12,7 @@ const myFunction = async () => {
 }
 
 
-export default function page() {
+export default function Page() {
 
   const [numIssues,setNum] = useState(0);
   useEffect(() =>{

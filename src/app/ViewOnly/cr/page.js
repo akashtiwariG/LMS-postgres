@@ -12,7 +12,7 @@ const myFunction = async () => {
   console.log(res.data)
   return res.data;
 }
-export default function page() {
+export default function Page() {
   const [numIssues,setNum] = useState(0);
   useEffect(() =>{
     const val = myFunction().then((data) => setNum(data))

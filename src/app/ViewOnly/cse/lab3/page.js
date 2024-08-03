@@ -14,7 +14,7 @@ const myFunction = async () => {
   return res.data;
 }
 
-export default function page() {
+export default function Page() {
 
   const [bool,setBool] = useState(false);
   const [data,setData] = useState([]);
