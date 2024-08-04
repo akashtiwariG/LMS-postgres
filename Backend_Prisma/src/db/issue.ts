@@ -5,6 +5,7 @@ const router = express.Router();
 router.get('/', async(req:Request,res:Response) => {
 
     const response = await prisma.issues.findMany({});
+    res.json(response);
     
     
 })
