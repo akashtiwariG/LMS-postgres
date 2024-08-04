@@ -4,7 +4,7 @@ import bodyParser from "body-parser"
 import prisma from "./db";
 const app = express();
 app.use(cors({
-    origin:[],
+    origin:["https://frontend1-elk2o97p2-tusharsaini-05s-projects.vercel.app/"],
     methods:["POST","GET","DELETE"],
     credentials:true
 }));
