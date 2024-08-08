@@ -17,7 +17,11 @@ const cors_1 = __importDefault(require("cors"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const db_1 = __importDefault(require("./db"));
 const app = (0, express_1.default)();
-app.use((0, cors_1.default)());
+app.use((0, cors_1.default)({
+    origin: ["https://frontend1-elk2o97p2-tusharsaini-05s-projects.vercel.app/"],
+    methods: ["POST", "GET", "DELETE"],
+    credentials: true
+}));
 const admin_1 = __importDefault(require("./routes/admin"));
 const administrator_1 = __importDefault(require("./routes/administrator"));
 const issue_1 = __importDefault(require("./db/issue"));
