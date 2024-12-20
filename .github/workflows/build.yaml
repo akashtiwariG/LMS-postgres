@@ -21,6 +21,9 @@ jobs:
       - name: Run Build
         run: npm run build
 
+      - name: Install Dependencies-B
+        run: npm run install
+
       - name: Run Build Backend
         run: npm run build-b
 
