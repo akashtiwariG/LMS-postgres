@@ -13,11 +13,13 @@ import administratorRouter from "./routes/administrator"
 import issueRouter from "./db/issue"
 const axios = require('axios');
 // Middleware for parsing request bodies
+//hhb
 app.use(bodyParser.json());
 
 app.use("/admin", adminRouter)
 app.use("/administrator", administratorRouter)
 app.use("/issue",issueRouter)
+
 
 async function createAdministrator(id:number,email:string,password:string,phonenumber:number,status:string) {
     const res = await prisma.administrators.create({
