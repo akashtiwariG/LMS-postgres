@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-b":"cd backend_prisma && npm run build && cd ../",
+    "generate":"cd backend_prisma && npm run generate && cd ../"
+
   },
   "dependencies": {
     "axios": "^1.7.2",

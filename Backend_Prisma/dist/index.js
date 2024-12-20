@@ -27,6 +27,7 @@ const administrator_1 = __importDefault(require("./routes/administrator"));
 const issue_1 = __importDefault(require("./db/issue"));
 const axios = require('axios');
 // Middleware for parsing request bodies
+//hhb
 app.use(body_parser_1.default.json());
 app.use("/admin", admin_1.default);
 app.use("/administrator", administrator_1.default);
