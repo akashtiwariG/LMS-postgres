@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "install": "cd backend_prisma && npm install && cd ../",
-    "build-b":"cd backend_prisma && npm run build && cd ../",
-    "generate":"cd backend_prisma && npm run generate && cd ../"
+    "install": "cd Backend_prisma && npm install && cd ../",
+    "build-b":"cd Backend_prisma && npm run build && cd ../",
+    "generate":"cd Backend_prisma && npm run generate && cd ../"
 
   },
   "dependencies": {
