@@ -10,7 +10,7 @@ import { render } from 'react-dom'
 
 const myFunction = async () => {
   // run asynchronous tasks here
-  const res = await axios.get('http://localhost:4000/issue/labIssue?department=ee&labno=1')
+  const res = await axios.get('http://44.201.225.87:8080/issue/labIssue?department=ee&labno=1')
   return res.data;
 }
 
@@ -106,7 +106,7 @@ export default function Page() {
         <h2 className="mt-4 text-xl font-bold text-white">{issue.issue}</h2>
         <div class="flex justify-end">
         <button hidden={!bool} onClick={async() =>{
-                      await fetch(`http://localhost:4000/admin/deleteIssue?id=${issue.id}&labno=${issue.labno}&department=${issue.department}`, {
+                      await fetch(`http://44.201.225.87:8080/admin/deleteIssue?id=${issue.id}&labno=${issue.labno}&department=${issue.department}`, {
             method: "DELETE",
             headers: { 'Authorization': `Bearer ${JSON.parse(token).token}` },
 
@@ -159,7 +159,7 @@ export default function Page() {
     </div>
     <div className="mt-12 text-center">
       <a
-        href="/ViewOnly/cse/lab1/createissue"
+        href="/ViewOnly/ee/lab1/createissue"
         className="inline-block rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
       >
       <div><i class="fa-solid fa-plus"></i></div>

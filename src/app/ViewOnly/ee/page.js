@@ -7,7 +7,7 @@ import { useState,useEffect } from 'react'
 import axios from 'axios'
 const myFunction = async () => {
   // run asynchronous tasks here
-  const res = await axios.get('http://localhost:4000/issue/depnumIssue?department=ee')
+  const res = await axios.get('http://44.201.225.87:8080/issue/depnumIssue?department=ee')
   console.log(res.data)
   return res.data;
 }

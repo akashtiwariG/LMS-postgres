@@ -10,7 +10,7 @@ import { render } from 'react-dom'
 
 const myFunction = async () => {
   // run asynchronous tasks here
-  const res = await axios.get('http://localhost:4000/issue/labIssue?department=cse&labno=1')
+  const res = await axios.get('http://44.201.225.87:8080/issue/labIssue?department=cr&labno=2')
   return res.data;
 }
 
@@ -41,14 +41,14 @@ export default function Page() {
 
 {/* hero section starts */}
 <section
-  className="overflow-hidden bg-[url(https://engineering.usu.edu/images/matlab/matlab.png)] bg-cover bg-top bg-no-repeat"
+  className="overflow-hidden bg-[url(https://www.materials-talks.com/wp-content/uploads/2023/05/PN11525_037_FRKL__Hero-Header-1920x675-1-1024x360.jpg)] bg-cover bg-top bg-no-repeat"
 >
   <div className="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
     <div className="text-center ltr:sm:text-left rtl:sm:text-right">
-      <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">MATLAB</h2>
+      <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Instrument Characteristics</h2>
 
       <p className="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
-      Advance Your Skills with MATLAB and Simulink Training. Virtual, in-person, and self-paced courses accommodate various learning styles and organizational needs.
+        This lab has experiments like Xray Diffraction , BET, UV etc for finding the properties of the materials.
       </p>
 
       <div className="mt-4 sm:mt-8">
@@ -106,7 +106,7 @@ export default function Page() {
         <h2 className="mt-4 text-xl font-bold text-white">{issue.issue}</h2>
         <div class="flex justify-end">
         <button hidden={!bool} onClick={async() =>{
-                      await fetch(`http://localhost:4000/admin/deleteIssue?id=${issue.id}&labno=${issue.labno}&department=${issue.department}`, {
+                      await fetch(`http://44.201.225.87:8080/admin/deleteIssue?id=${issue.id}&labno=${issue.labno}&department=${issue.department}`, {
             method: "DELETE",
             headers: { 'Authorization': `Bearer ${JSON.parse(token).token}` },
 
@@ -159,7 +159,7 @@ export default function Page() {
     </div>
     <div className="mt-12 text-center">
       <a
-        href="/ViewOnly/cse/lab1/createissue"
+        href="/ViewOnly/cr/MATLAB/createissue"
         className="inline-block rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
       >
       <div><i class="fa-solid fa-plus"></i></div>

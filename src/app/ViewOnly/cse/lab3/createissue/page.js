@@ -27,7 +27,7 @@ const FormComponent = () => {
     axios.request({
       method: 'post',
       maxBodyLength: Infinity,
-      url: 'http://44.201.225.87:8080/admin/issue',
+      url: 'http://localhost:4000/admin/issue',
       headers: { 
          'Authorization': `bearer ${JSON.parse(token).token}`, 
          'Content-Type': 'application/json'
@@ -35,14 +35,14 @@ const FormComponent = () => {
      data : JSON.stringify({
        "department": "cse",
        "issue": issue,
-       "labno": 1,
+       "labno": 3,
        "status": "notcompleted",
        "description": description
        })
       }).then((response) =>{
         console.log(response.data.newIssue)
      }).then(() => {
-      window.location.href = "/ViewOnly/cse/lab1"
+      window.location.href = "/ViewOnly/cse/lab3"
      })}
   
   useEffect(() =>{
