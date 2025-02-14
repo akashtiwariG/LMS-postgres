@@ -27,7 +27,7 @@ const FormComponent = () => {
     axios.request({
       method: 'post',
       maxBodyLength: Infinity,
-      url: 'http://44.201.225.87:8080/admin/issue',
+      url: 'http://54.174.251.56:8080/admin/issue',
       headers: { 
          'Authorization': `bearer ${JSON.parse(token).token}`, 
          'Content-Type': 'application/json'

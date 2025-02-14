@@ -10,7 +10,7 @@ import { render } from 'react-dom'
 
 const myFunction = async () => {
   // run asynchronous tasks here
-  const res = await axios.get('http://44.201.225.87:8080/issue/labIssue?department=cr&labno=3')
+  const res = await axios.get('http://54.174.251.56:8080/issue/labIssue?department=cr&labno=3')
   return res.data;
 }
 
@@ -106,7 +106,7 @@ export default function Page() {
         <h2 className="mt-4 text-xl font-bold text-white">{issue.issue}</h2>
         <div class="flex justify-end">
         <button hidden={!bool} onClick={async() =>{
-                      await fetch(`http://44.201.225.87:8080/admin/deleteIssue?id=${issue.id}&labno=${issue.labno}&department=${issue.department}`, {
+                      await fetch(`http://54.174.251.56:8080/admin/deleteIssue?id=${issue.id}&labno=${issue.labno}&department=${issue.department}`, {
             method: "DELETE",
             headers: { 'Authorization': `Bearer ${JSON.parse(token).token}` },
 

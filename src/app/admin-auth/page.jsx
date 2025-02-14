@@ -24,7 +24,7 @@ const AdministratorLogin = () => {
         setPhonenumber('');
         console.log('testf');
 
-        const response = await fetch('http://44.201.225.87:8080/admin/signin', {
+        const response = await fetch('http://54.174.251.56:8080/admin/signin', {
             method: "POST",
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify({ email, password, phonenumber })
